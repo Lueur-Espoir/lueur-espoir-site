@@ -1,0 +1,115 @@
+backend:
+  name: git-gateway
+  branch: main
+
+publish_mode: simple
+media_folder: "assets"
+public_folder: "/assets"
+
+collections:
+  - name: "contenu"
+    label: "Contenu du site"
+    files:
+      - file: "content/content.json"
+        label: "Textes du site"
+        name: "content"
+        fields:
+          - label: "Accueil (Hero)"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Petit texte au-dessus du titre", name: "eyebrow", widget: "string" }
+              - { label: "Titre principal", name: "title", widget: "text" }
+              - { label: "Texte d'introduction", name: "lead", widget: "text" }
+
+          - label: "Notre mission"
+            name: "mission"
+            widget: "object"
+            fields:
+              - { label: "Petit texte au-dessus du titre", name: "eyebrow", widget: "string" }
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Paragraphe 1", name: "paragraph_1", widget: "text" }
+              - { label: "Paragraphe 2", name: "paragraph_2", widget: "text" }
+              - { label: "Paragraphe 3", name: "paragraph_3", widget: "text" }
+
+          - label: "Nos actions (7 cartes)"
+            name: "actions"
+            widget: "object"
+            fields:
+              - { label: "Petit texte au-dessus du titre", name: "eyebrow", widget: "string" }
+              - { label: "Titre de la section", name: "title", widget: "string" }
+              - { label: "Texte d'introduction", name: "lead", widget: "text" }
+              - { label: "Carte 1 - Titre", name: "item_1_title", widget: "string" }
+              - { label: "Carte 1 - Description", name: "item_1_desc", widget: "text" }
+              - { label: "Carte 2 - Titre", name: "item_2_title", widget: "string" }
+              - { label: "Carte 2 - Description", name: "item_2_desc", widget: "text" }
+              - { label: "Carte 3 - Titre", name: "item_3_title", widget: "string" }
+              - { label: "Carte 3 - Description", name: "item_3_desc", widget: "text" }
+              - { label: "Carte 4 - Titre", name: "item_4_title", widget: "string" }
+              - { label: "Carte 4 - Description", name: "item_4_desc", widget: "text" }
+              - { label: "Carte 5 - Titre", name: "item_5_title", widget: "string" }
+              - { label: "Carte 5 - Description", name: "item_5_desc", widget: "text" }
+              - { label: "Carte 6 - Titre", name: "item_6_title", widget: "string" }
+              - { label: "Carte 6 - Description", name: "item_6_desc", widget: "text" }
+              - { label: "Carte 7 - Titre", name: "item_7_title", widget: "string" }
+              - { label: "Carte 7 - Description", name: "item_7_desc", widget: "text" }
+
+          - label: "Nos activités"
+            name: "activities"
+            widget: "object"
+            fields:
+              - { label: "Petit texte au-dessus du titre", name: "eyebrow", widget: "string" }
+              - { label: "Titre de la section", name: "title", widget: "string" }
+              - { label: "Texte d'introduction", name: "lead", widget: "text" }
+              - { label: "Titre du message d'attente", name: "placeholder_title", widget: "string" }
+              - { label: "Texte du message d'attente", name: "placeholder_text", widget: "text" }
+
+          - label: "Nous rejoindre (adhésion)"
+            name: "membership"
+            widget: "object"
+            fields:
+              - { label: "Petit texte au-dessus du titre", name: "eyebrow", widget: "string" }
+              - { label: "Titre de la section", name: "title", widget: "string" }
+              - { label: "Texte d'introduction", name: "lead", widget: "text" }
+              - { label: "Carte 1 - Nom", name: "card_1_name", widget: "string" }
+              - { label: "Carte 1 - Avantage 1", name: "card_1_benefit_1", widget: "string" }
+              - { label: "Carte 1 - Avantage 2", name: "card_1_benefit_2", widget: "string" }
+              - { label: "Carte 1 - Avantage 3", name: "card_1_benefit_3", widget: "string" }
+              - { label: "Carte 2 - Nom", name: "card_2_name", widget: "string" }
+              - { label: "Carte 2 - Avantage 1", name: "card_2_benefit_1", widget: "string" }
+              - { label: "Carte 2 - Avantage 2", name: "card_2_benefit_2", widget: "string" }
+              - { label: "Carte 2 - Avantage 3", name: "card_2_benefit_3", widget: "string" }
+              - { label: "Carte 3 - Nom", name: "card_3_name", widget: "string" }
+              - { label: "Carte 3 - Avantage 1", name: "card_3_benefit_1", widget: "string" }
+              - { label: "Carte 3 - Avantage 2", name: "card_3_benefit_2", widget: "string" }
+              - { label: "Carte 3 - Avantage 3", name: "card_3_benefit_3", widget: "string" }
+
+          - label: "Faire un don"
+            name: "donation"
+            widget: "object"
+            fields:
+              - { label: "Petit texte au-dessus du titre", name: "eyebrow", widget: "string" }
+              - { label: "Titre de la section", name: "title", widget: "string" }
+              - { label: "Texte d'introduction", name: "lead", widget: "text" }
+              - { label: "Titre de la carte", name: "card_title", widget: "string" }
+              - { label: "Texte de la carte", name: "card_text", widget: "text" }
+              - { label: "Lien HelloAsso", name: "helloasso_url", widget: "string" }
+
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Petit texte au-dessus du titre", name: "eyebrow", widget: "string" }
+              - { label: "Titre de la section", name: "title", widget: "string" }
+              - { label: "Texte d'introduction", name: "lead", widget: "text" }
+              - { label: "Adresse", name: "address", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Téléphone 1 (sans espaces)", name: "phone_1", widget: "string" }
+              - { label: "Téléphone 2 (sans espaces)", name: "phone_2", widget: "string" }
+
+          - label: "Pied de page"
+            name: "footer"
+            widget: "object"
+            fields:
+              - { label: "Ligne légale 1", name: "legal_line_1", widget: "string" }
+              - { label: "Ligne légale 2", name: "legal_line_2", widget: "string" }
